@@ -1,0 +1,11 @@
+/**************************
+ *    Configuration
+ *   Prepared for ansible
+ **************************/
+{
+  "cassandra": {
+    "host": "{{ cassandra_ip }}",
+    "password": "{{ cassandra_pwd }}",
+    "user": "{{ cassandra_user }}"
+  }
+}

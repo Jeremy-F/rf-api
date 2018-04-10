@@ -1,0 +1,16 @@
+{
+  "cassandra": {
+    "host": "10.0.25.11",
+    "port": 9042,
+    "database": "pdo",
+    "password": "cassandra",
+    "name": "cassandra",
+    "user": "cassandra",
+    "connectTimeout": 30000,
+    "readTimeout": 30000,
+    "connector": "cassandra",
+    "pooling":{
+      "maxRequestsPerConnection": 4096
+    }
+  }
+}

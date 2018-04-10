@@ -1,0 +1,37 @@
+{
+  "name": "results",
+  "plural": "results",
+  "base": "PersistedModel",
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "frequency": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "absolutepower": {
+      "type": "number",
+      "required": true
+    },
+    "moment": {
+      "type": "date",
+      "required": true
+    },
+    "band_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "band": {
+      "type": "belongsTo",
+      "model": "Bands",
+      "foreignKey": "band_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
