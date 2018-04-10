@@ -1,0 +1,45 @@
+{
+  "name": "bands",
+  "plural": "bands",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "start_frequency": {
+      "type": "number",
+      "required": true
+    },
+    "stop_frequency": {
+      "type": "number",
+      "required": true
+    },
+    "rbw": {
+      "type": "number",
+      "required": true
+    },
+    "points": {
+      "type": "number",
+      "required": true
+    },
+    "antenna_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "antenna": {
+      "type": "belongsTo",
+      "model": "Antennas",
+      "foreignKey": "antenna_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
